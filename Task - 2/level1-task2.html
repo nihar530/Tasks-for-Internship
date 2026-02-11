@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting App</title>
+</head>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
+
+    <h1>Time Based Greeting</h1>
+    <button onclick="showGreeting()">Show Greeting</button>
+
+    <script>
+        function showGreeting() {
+            var hour = new Date().getHours();
+            var message;
+
+            if (hour < 12) {
+                message = "Good Morning ☀️";
+            } 
+            else if (hour < 18) {
+                message = "Good Afternoon 🌤️";
+            } 
+            else {
+                message = "Good Evening 🌙";
+            }
+
+            alert(message);
+        }
+    </script>
+
+</body>
+</html>
+
